@@ -34,8 +34,11 @@ Step 4: Created flask application and used the already trained model for detecti
 **Approach for Frontend:**
 
 Step 1: Create a react application and get the ssl certification to access the camera + ssl for APIs to ( Due to CORS policy)
+
 Step 2: Capturing image from camera sending it to server and getting predictions
+
 Step 3: Drawing the boxes on client end for detected boxes
+
 Step 4: Also managing the number of request to send to the server at a time
 
 
