@@ -3,8 +3,6 @@
 **Note**:
 	1. We are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.
 	
-	2. Accuracy in jupyter  Notebook or in webcam via  opencv is much higher.. Reason for the lower accuracy is the variable shape of images and drawing rectangle on users end. Could have been improved with little more time.
-
 
 **Points**:
 
@@ -65,6 +63,16 @@ Step 4: Also manage the number of requests, sends to the server at a time, to pr
 4. We can also reduce the time delay by compressing the data before sending it to the server. Will improve the performance.
 
 5. In mobiles when users switch the camera from front to rear, images get flipped and boxes get distorted a little bit. We can also improve that.
+
+
+
+**Reason for low accuracy:**
+
+1. Accuracy was much higher in Jupyter notebook(for given test images - (not completely overfitting)), reason for low here is, Here input images having lots of noise in background as compared to the training images. 
+
+2. Size variation in image, when drawing boxes at clients end.
+
+3. Few training images.
 
 
 
