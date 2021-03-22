@@ -54,9 +54,7 @@ Step 4: Also manage the number of requests, sends to the server at a time, to pr
 
 **Area to improve:**
 
-1. Since training data was too small to train, the accuracy is not too much high at this time( because most of training data was very simple and plain in 
-
-   background but for detecting with other objects (ex: real data with noise) we need more data sets )
+1. Since training data was too small to train, the accuracy is not too much high at this time( because most of training data was very simple and plain in background but for detecting with other objects (ex: real data with noise) we need more data sets )
 
 3. Front end applications can be built more in React way(more component wise) but due to time issue, i went with more general way. 
 
@@ -73,6 +71,4 @@ Step 4: Also manage the number of requests, sends to the server at a time, to pr
 2. Size variation in image, when drawing boxes at clients end.
 
 3. Few training images.
-
-
 
