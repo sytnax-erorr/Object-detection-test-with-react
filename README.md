@@ -8,7 +8,7 @@
 
 1. App URL - **https://aspiringcvengineer.xyz/**
 
-2. API URL - 1. App URL - **https://api.aspiringcvengineer.xyz:5000**
+2. API URL - **https://api.aspiringcvengineer.xyz:5000**
 
 3. Accessible from everywhere (ex: Laptop, mobile,etc ) & will ask permission to access the camera of the device.
 
