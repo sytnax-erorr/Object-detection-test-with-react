@@ -1,9 +1,5 @@
 # Object-detection-test-with-react
 
-**Note**:
-	1. We are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.
-	
-
 **URLs**:
 
 1. App URL - **https://aspiringcvengineer.xyz:8000** **(Tensorflow.js + React.js - Custmized the code only to detect 3 Classes)**
@@ -12,9 +8,10 @@
  
 3. API URL - **https://api.aspiringcvengineer.xyz:5000** **( Falsk + custom trained model for prediction (full development))**
 
-*In 2nd React App we are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.*
+	*In 2nd React App we are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.*
 
-*All URLs will require permission to access the Camera*
+	*All URLs will require permission to access the Camera*
+
 
 **Folder Structure**:
 
@@ -26,11 +23,13 @@
 *ssnv* -> Few screenshots and demo videos ( *Both* Mobile & Laptop)
 
 
+
 **Model Selected  - “ssd_mobilenet_v2”**
 
 **Reasons**: Since our primary focus was to detect the objects on real time (web cam), so we needed higher speed then accuracy.
 
 **Config file** : Full model pipeline config file is present in the directory /Model/pipeline.config
+
 
 
 **Approach For Backend:**
@@ -44,6 +43,7 @@ Step 3: Used transfer learning and trained the model further with custom trainin
 Step 4: Created a flask application and used the already trained model (Step 3) for detection ( Goal - to create APIs)
 
 
+
 **Approach for Frontend:**
 
 Step 1: Create a react application and get the ssl certification to access the camera + ssl for the APIs(Backend) ( Due to CORS policy)
@@ -53,6 +53,7 @@ Step 2: Capturing image from camera sending it to server and getting predictions
 Step 3: Drawing the boxes on clients end for detected boxes
 
 Step 4: Also manage the number of requests, sends to the server at a time, to prevent app cracking. 
+
 
 
 **Area to improve:**
@@ -69,9 +70,9 @@ Step 4: Also manage the number of requests, sends to the server at a time, to pr
 
 **Reason for low accuracy:**
 
-1. Accuracy was much higher in Jupyter notebook(for given test images - (not completely overfitting)), reason for low here is, Here input images having lots of noise in background as compared to the training images. 
+1. Accuracy was much higher in Jupyter notebook(for given test images - (not exactly overfitting)), reason for low here is, Here input images having lots of noise in background as compared to the training images. 
 
-2. Size variation in image, when drawing boxes at clients end.
+2. Size variation in image & canvas, when drawing boxes at clients end.
 
 3. Few training images.
 
