@@ -1,7 +1,9 @@
 # Object-detection-test-with-react
 
 **Note**:
-	We are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.
+	1. We are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.
+	
+	2. Accuracy in jupyter  Notebook or in webcam via  opencv is much higher.. Reason for the lower accuracy is the variable shape of images and drawing rectangle on users end. Could have been improved with little more time.
 
 
 **Points**:
@@ -25,7 +27,7 @@
 
 **Model Selected  - “ssd_mobilenet_v2”**
 
-**Reasons**: Since our primary focus was to detect the objects on real time (web cam),  so we needed higher speed with little compromise with accuracy.
+**Reasons**: Since our primary focus was to detect the objects on real time (web cam), so we needed higher speed then accuracy.
 
 **Config file** : Full model pipeline config file is present in the directory /Model/pipeline.config
 
