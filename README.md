@@ -42,6 +42,7 @@ Step 3: Drawing the boxes on client end for detected boxes
 Step 4: Also managing the number of request to send to the server at a time
 
 
+
 **Area to improve:**
 1. Since training data was too small to train, the accuracy is not too much high at this time( because most of training data was very simple and plain in background but for detecting with other objects(real data with noise) we need more data sets )
 2. Front end applications can be built more in React way(more component wise) but due to time issue, i went with the easy way. 
