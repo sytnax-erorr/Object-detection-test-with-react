@@ -4,14 +4,17 @@
 	1. We are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.
 	
 
-**Points**:
+**URLs**:
 
-1. App URL - **https://aspiringcvengineer.xyz/**
+1. App URL - **https://aspiringcvengineer.xyz:8000** **(Tensorflow.js + React.js - Custmized the code only to detect 3 Classes)**
 
-2. API URL - **https://api.aspiringcvengineer.xyz:5000**
+2. APP URL - **https://aspiringcvengineer.xyz/** **(React app + used APIs for detection (full development))**
+ 
+3. API URL - **https://api.aspiringcvengineer.xyz:5000** **( Falsk + custom trained model for prediction (full development))**
 
-3. Accessible from everywhere (ex: Laptop, mobile,etc ) & will ask permission to access the camera of the device.
+*In 2nd React App we are hitting the apis on an avg every 4-7 sec, so there is little delay in the detected screen.*
 
+*All URLs will require permission to access the Camera*
 
 **Folder Structure**:
 
