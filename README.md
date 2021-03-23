@@ -48,17 +48,17 @@ Step 4: Created a flask application and used the already trained model (Step 3) 
 
 Step 1: Create a react application and get the ssl certification to access the camera + ssl for the APIs(Backend) ( Due to CORS policy)
 
-Step 2: Capturing image from camera sending it to server and getting predictions (in JSON form)
+Step 2: Capturing image from camera sending it to server and getting predictions back in JSON format.
 
-Step 3: Drawing the boxes on clients end for detected boxes
+Step 3: Drawing the boxes on clients end (browser) for detected objcts.
 
-Step 4: Also manage the number of requests, sends to the server at a time, to prevent app cracking. 
+Step 4: Also managing the number of requests, sends to the server at a time, to prevent app cracking. 
 
 
 
 **Area to improve:**
 
-1. Since training data was too small to train, the accuracy is not too much high at this time( because most of training data was very simple and plain in background but for detecting with other objects (ex: real data with noise) we need more data sets )
+1. Since training data was too small to train, the accuracy is not too much high at this time( because most of training data was very simple and plain in background but the acutal images are very noisy (captured through web cam).
 
 3. Front end applications can be built more in React way(more component wise) but due to time issue, i went with more general way. 
 
@@ -70,9 +70,9 @@ Step 4: Also manage the number of requests, sends to the server at a time, to pr
 
 **Reason for low accuracy:**
 
-1. Accuracy was much higher in Jupyter notebook(for given test images - (not exactly overfitting)), reason for low here is, Here input images having lots of noise in background as compared to the training images. 
+1. Accuracy was much higher in Jupyter notebook(for given test images - (not exactly overfitting)), reason for low is the 1st point in Area to imporve.
 
-2. Size variation in image & canvas, when drawing boxes at clients end.
+2. Size variation in image & canvas(depending on screen size), when drawing the boxes at clients end.
 
 3. Few training images.
 
